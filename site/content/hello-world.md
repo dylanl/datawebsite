@@ -7,3 +7,4 @@ More World
 
 [//]: # ({% includes plotly/whatever.html %})
 
+[//]: ![alt text](/path/to/img.jpg "Title")
