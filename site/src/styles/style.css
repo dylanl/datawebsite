@@ -1,9 +1,11 @@
-.margin {
-  margin: 0px
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 .center {
   text-align:center;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 /* Dropdown Button */
