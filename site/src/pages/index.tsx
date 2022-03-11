@@ -6,11 +6,9 @@ function Home() {
   return (
     <div className="h-screen font-serif">
       <Header />
-      <main>
-        <div className="flex justify-center lg:text-2xl md:text-xl text-lg">
-          What data is most recent?
-        </div>
-      </main>
+      <div className="grid place-items-center">
+      <iframe width="80%" height="514" frameBorder="0" src="https://observablehq.com/embed/db919c1224f6b32c?cells=p2"></iframe>
+      </div>
     </div>
   )
 }
