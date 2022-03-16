@@ -9,6 +9,7 @@ function Header({}: Props) {
     <header className="pt-16">
       <Helmet>
         <title>Home</title>
+        <body className="light" />
       </Helmet>
       <Navbar />
     </header>
