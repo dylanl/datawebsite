@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
+    "prepare": "cd .. && husky install site/.husky",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "lint": "npx eslint src",
@@ -35,7 +36,9 @@
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-react": "^7.29.4",
-    "prettier": "^2.6.2"
+    "husky": "^7.0.4",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.3"
   },
   "repository": {
     "type": "git",
