@@ -1,9 +1,7 @@
 import { Link } from "gatsby"
 import React, { useEffect, useRef } from "react"
 
-type Props = {}
-
-function Navbar({}: Props) {
+function Navbar() {
   const bodyRef = useRef<HTMLBodyElement>()
   const toggleCircleRef = useRef<HTMLDivElement>()
 

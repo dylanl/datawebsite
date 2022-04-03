@@ -1,6 +1,6 @@
 module.exports = {
   content: ["./src/**/*.tsx"],
-  darkMode: 'class',
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {

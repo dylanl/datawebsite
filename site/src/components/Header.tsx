@@ -2,9 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import Navbar from "../components/Navbar"
 
-type Props = {}
-
-function Header({}: Props) {
+function Header() {
   return (
     <header className="pt-16">
       <Helmet>

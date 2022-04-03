@@ -12,7 +12,12 @@ function Home() {
     <div className="h-screen font-serif bg-slate-100 dark:bg-slate-400">
       <Header />
       <div className="grid place-items-center">
-      <iframe width="80%" height="514" frameBorder="0" src="https://observablehq.com/embed/db919c1224f6b32c?cells=p2"></iframe>
+        <iframe
+          width="80%"
+          height="514"
+          frameBorder="0"
+          src="https://observablehq.com/embed/db919c1224f6b32c?cells=p2"
+        ></iframe>
       </div>
 
       <Barchart data={chartdata} />

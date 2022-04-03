@@ -79,7 +79,7 @@ function Barchart({ data }: Props<number>) {
           .style("top", event.pageY - 28 + "px")
           .text(event.target.__data__)
       })
-      .on("mouseout", function (event) {
+      .on("mouseout", function () {
         d3.select(this).style("fill", dynamicColor)
       })
 
