@@ -87,7 +87,7 @@ These are the Prerequisites and Steps to build the project
 [contributors-shield]: https://img.shields.io/github/contributors/dylanl/datawebsite
 [contributors-url]: https://github.com/dylanl/datawebsite/graphs/contributors
 [stars-shield]: https://img.shields.io/github/stars/dylanl/datawebsite
-[stars-url]: https://github.com/dylanl/datawebsite
+[stars-url]: https://github.com/dylanl/datawebsite/stargazers
 [issues-shield]: https://img.shields.io/github/issues/dylanl/datawebsite
 [issues-url]: https://github.com/dylanl/datawebsite/issues
 [nvm-windows]: https://github.com/coreybutler/nvm-windows
