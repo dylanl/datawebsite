@@ -79,6 +79,7 @@ These are the Prerequisites and Steps to build the project
    npm run start
    ```
 
+## Modifying the Header
 
 <!-- ## License -->
 
