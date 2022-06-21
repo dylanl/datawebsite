@@ -1,6 +1,24 @@
 import { Link } from "gatsby"
 import React, { useEffect, useRef } from "react"
 
+function handleButtonClick(
+  e: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+  bodyRef: React.RefObject<HTMLBodyElement>,
+  toggleCircleRef: React.RefObject<HTMLDivElement>,
+) {
+  e.preventDefault()
+
+  if (bodyRef.current.classList.contains("dark")) {
+    bodyRef.current.classList.remove("dark")
+    bodyRef.current.classList.add("light")
+    toggleCircleRef.current.classList.remove("translate-x-full")
+  } else {
+    bodyRef.current.classList.remove("light")
+    bodyRef.current.classList.add("dark")
+    toggleCircleRef.current.classList.add("translate-x-full")
+  }
+}
+
 function Navbar() {
   const bodyRef = useRef<HTMLBodyElement>()
   const toggleCircleRef = useRef<HTMLDivElement>()
@@ -9,20 +27,6 @@ function Navbar() {
     bodyRef.current = document.querySelector("body")
     toggleCircleRef.current = document.querySelector("#theme-toggle")
   }, [])
-
-  function handleButtonClick(e) {
-    e.preventDefault()
-
-    if (bodyRef.current.classList.contains("dark")) {
-      bodyRef.current.classList.remove("dark")
-      bodyRef.current.classList.add("light")
-      toggleCircleRef.current.classList.remove("translate-x-full")
-    } else {
-      bodyRef.current.classList.remove("light")
-      bodyRef.current.classList.add("dark")
-      toggleCircleRef.current.classList.add("translate-x-full")
-    }
-  }
 
   return (
     <nav
@@ -63,7 +67,9 @@ function Navbar() {
       <div className="ml-auto mr-4">
         <button
           className="w-12 h-6 border-black dark:border-white border-2 rounded-full"
-          onClick={handleButtonClick}
+          onClick={(event) =>
+            handleButtonClick(event, bodyRef, toggleCircleRef)
+          }
         >
           <div
             id="theme-toggle"
