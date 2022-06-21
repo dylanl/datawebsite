@@ -20,6 +20,7 @@
     "autoprefixer": "^10.4.2",
     "cssnano": "^5.1.1",
     "d3": "^7.3.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "gatsby": "^4.9.2",
     "gatsby-plugin-postcss": "^5.9.0",
     "gatsby-plugin-react-helmet": "^5.9.0",

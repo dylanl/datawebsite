@@ -7,6 +7,7 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier", // Make sure this is the last
   ],
@@ -24,7 +25,11 @@ module.exports = {
       flowVersion: "0.53",
     },
   },
-  plugins: ["react", "@typescript-eslint"],
+  plugins: [
+    "react",
+    "@typescript-eslint",
+    "react-hooks",
+  ],
   rules: {
     indent: ["error", 2],
     "linebreak-style": ["error", "unix"],
